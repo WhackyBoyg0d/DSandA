@@ -73,10 +73,6 @@ int main() {
     else{
         printf("isNot\n");
     }
-    for (int i = 0; i < q.num; i++)
-    {
-        printf("%d\n", q.arr[i]);
-    }
 
     return 0;
 }
