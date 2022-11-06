@@ -71,13 +71,13 @@ void StackAdd(int i, struct Queue *q1, struct Queue *q2){
         enqueue(q1, i);
     }
     else{
-        for(int j = q1->f; j<q1->r; j++){
+        while(!isEmpty(q1)){
             int val = dequeue(q1);
             enqueue(q2, val);
         }
         enqueue(q1, i);
     }
-    for (int j = q2->f; j < q2->r; j++)
+    while(!isEmpty(q2))
     {
         int val = dequeue(q2);
         enqueue(q1, val);
